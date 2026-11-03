@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b43">
+<title>¡Luis Santiago cumple 9! | Misión Roblox</title>
+<meta name="description" content="¡Una misión especial! Acompaña a Luis Santiago en su cumpleaños número 9.">
+<style>
+:root {
+  --navy:#101b43;
+  --blue:#1769e8;
+  --cyan:#55e4ff;
+  --yellow:#ffd447;
+  --white:#fff;
+  --green:#36d68b;
+  --red:#ff6478;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  min-height:100vh;
+  color:white;
+  font-family:Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(circle at 15% 15%,#254b9a 0,transparent 30%),
+    radial-gradient(circle at 85% 35%,#173d79 0,transparent 28%),
+    linear-gradient(145deg,#0b1230,#101e4c 55%,#07132d);
+  overflow-x:hidden;
+}
+button { font:inherit; cursor:pointer; }
+.page {
+  width:min(100% - 28px,760px);
+  margin:0 auto;
+  padding:25px 0 45px;
+}
+.topline {
+  display:flex; justify-content:space-between; align-items:center;
+  gap:10px; font-size:12px; letter-spacing:2px;
+  color:#a9dfff; font-weight:900;
+}
+.tag {
+  border:1px solid #5be7ff80; border-radius:30px;
+  padding:8px 12px; background:#102e5b;
+}
+.hero {
+  position:relative; text-align:center; margin-top:25px;
+  padding:28px 18px 22px;
+  border:2px solid #75eaff70; border-radius:26px;
+  background:linear-gradient(160deg,#183d7b,#102451 70%);
+  box-shadow:0 15px 45px #0007,inset 0 0 30px #43c9ff18;
+  overflow:hidden;
+}
+.hero:before,.hero:after {
+  content:""; position:absolute; width:130px;height:130px;
+  background:#4be1ff12; transform:rotate(45deg);
+}
+.hero:before { top:-80px;left:-55px; }
+.hero:after { bottom:-90px;right:-50px; }
+.eyebrow {
+  color:var(--cyan); font-size:13px; letter-spacing:3px;
+  font-weight:900; position:relative;
+}
+h1 {
+  margin:12px 0 5px; font-size:clamp(32px,8vw,58px);
+  line-height:.98; font-weight:1000; letter-spacing:-2px;
+  text-shadow:0 4px 0 #12316c,0 8px 22px #0008;
+  position:relative;
+}
+h1 span { color:var(--yellow); display:block; }
+.subtitle {
+  color:#d7efff; font-size:16px; line-height:1.5;
+  margin:14px auto 0; max-width:490px; position:relative;
+}
+.level {
+  display:inline-flex; align-items:center; gap:8px;
+  margin-top:20px; background:#071735; border:1px solid #ffd447;
+  border-radius:12px; padding:10px 16px; color:var(--yellow);
+  font-weight:900; letter-spacing:1px; position:relative;
+}
+.world {
+  position:relative; height:210px; margin:22px auto 0;
+  max-width:550px; overflow:hidden;
+  border-radius:20px; background:
+  linear-gradient(#153a72 0 70%,#102957 70% 100%);
+  border:1px solid #6be7ff55;
+}
+.star {
+  position:absolute; color:#fff5a8; font-size:17px;
+  animation:twinkle 1.8s infinite alternate;
+}
+@keyframes twinkle { to {opacity:.35;transform:scale(.7)} }
+.platform {
+  position:absolute; height:18px; background:#20b9a5;
+  border:2px solid #7effe4; border-radius:4px;
+  box-shadow:0 8px 0 #116e75;
+}
+.platform.p1 {width:120px;left:7%;bottom:39px}
+.platform.p2 {width:145px;right:5%;bottom:80px}
+.platform.p3 {width:100px;left:39%;bottom:15px}
+.coin {
+  position:absolute; width:20px;height:20px;border-radius:50%;
+  background:linear-gradient(135deg,#fff27a,#ffae00);
+  border:3px solid #ffe88b; box-shadow:0 0 15px #ffd447;
+  animation:float 1.5s ease-in-out infinite alternate;
+}
+@keyframes float {to{transform:translateY(-9px)}}
+.coin.c1 {left:23%;top:45px}.coin.c2 {right:22%;top:25px}
+.coin.c3 {left:49%;top:75px}
+.avatar {
+  position:absolute; width:58px; height:105px;
+  bottom:50px; filter:drop-shadow(0 5px 3px #0006);
+  animation:bob 2s ease-in-out infinite;
+}
+.avatar.a1 {left:22%;animation-delay:.2s}
+.avatar.a2 {left:47%;bottom:26px;transform:scale(1.12)}
+.avatar.a3 {right:19%;bottom:91px;animation-delay:.5s}
+@keyframes bob {50%{translate:0 -5px}}
+.head {
+  width:39px;height:39px;margin:auto;border:3px solid #17254d;
+  border-radius:8px;background:#f3c18d;position:relative;
+}
+.head:before {
+  content:"";position:absolute;top:4px;left:4px;width:25px;height:9px;
+  background:#53301e;border-radius:5px 5px 2px 2px;
+}
+.face:after {
+  content:"•  •";white-space:pre;position:absolute;top:17px;left:7px;
+  color:#15203d;font-size:12px;font-weight:900;
+}
+.bodychar {
+  width:48px;height:37px;margin:0 auto;background:#ffbd35;
+  border:3px solid #17254d;border-radius:5px;
+}
+.a2 .bodychar {background:#28b8ff}
+.a3 .bodychar {background:#a878ff}
+.legs {display:flex;justify-content:center;gap:5px}
+.legs i {
+  display:block;width:17px;height:25px;background:#294b9a;
+  border:2px solid #17254d;border-radius:3px;
+}
+.a3 .legs i {background:#26345b}
+.details {
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:10px;margin:18px 0;
+}
+.detail {
+  background:#102a58;border:1px solid #65dfff55;
+  border-radius:15px;padding:15px 9px;text-align:center;
+}
+.detail .emoji {font-size:25px}
+.detail strong {display:block;color:var(--yellow);font-size:13px;margin:8px 0 5px}
+.detail span {font-size:13px;line-height:1.4;color:#e2f3ff}
+.section {
+  margin-top:22px;padding:22px;
+  border:1px solid #65dfff55;border-radius:22px;
+  background:#10244bdb;
+}
+.section h2 {
+  margin:0 0 8px;font-size:22px;color:var(--yellow);
+}
+.section p {color:#d8eaff;line-height:1.5;margin:7px 0 16px}
+.sound-btn,.share-btn {
+  display:block;width:100%;padding:14px;border:1px solid #72e8ff;
+  border-radius:13px;background:#174b8a;color:white;
+  font-weight:900;letter-spacing:.5px;
+}
+.sound-btn:active,.share-btn:active {transform:scale(.98)}
+.sound-note {font-size:12px;color:#a9c9e8;text-align:center;margin-top:9px}
+.mission {
+  margin-top:22px;text-align:center;
+  border:2px solid #ffd447;border-radius:22px;
+  background:linear-gradient(140deg,#193f7b,#10234c);
+  padding:22px;
+}
+.mission h2 {color:var(--yellow);margin:0 0 8px}
+.mission p {color:#d9eaff;line-height:1.5}
+.progress {
+  height:13px;background:#07132d;border-radius:20px;
+  overflow:hidden;margin:16px 0 7px;border:1px solid #6b9ed8;
+}
+.progress div {
+  width:100%;height:100%;background:linear-gradient(90deg,#28d99a,#54eaff);
+}
+.progress-label {font-size:11px;color:#bdefff;letter-spacing:2px}
+.invite-list {display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.guest {
+  background:#0c1c3b;border:1px solid #4e82c6;
+  border-radius:16px;padding:14px 12px;text-align:center;
+}
+.guest-avatar {
+  width:54px;height:54px;margin:0 auto 9px;
+  display:grid;place-items:center;font-size:29px;
+  background:linear-gradient(145deg,#245da4,#122b59);
+  border:2px solid #67dfff;border-radius:13px;
+  box-shadow:0 5px 0 #07152f;
+}
+.guest strong {display:block;font-size:14px;margin-bottom:12px}
+.guest button {
+  display:block;width:100%;border:0;border-radius:9px;
+  padding:10px 7px;font-size:12px;font-weight:900;margin-top:7px;
+}
+.yes {background:var(--green);color:#062b20}
+.no {background:#344767;color:white}
+.footer {
+  text-align:center;color:#9bb9df;font-size:12px;
+  line-height:1.6;margin:22px 10px 0;
+}
+.footer strong {color:#fff}
+.confetti {
+  position:fixed;top:-15px;width:9px;height:14px;
+  z-index:99;pointer-events:none;animation:fall 2.5s linear forwards;
+}
+@keyframes fall {to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+.toast {
+  display:none;position:fixed;bottom:18px;left:50%;
+  transform:translateX(-50%);z-index:100;
+  width:min(90%,420px);padding:13px 16px;
+  background:#07152f;border:1px solid #5ce5ff;
+  border-radius:12px;text-align:center;color:white;
+  box-shadow:0 8px 25px #0008;font-size:14px;
+}
+@media(max-width:480px) {
+  .page {width:min(100% - 20px,760px);padding-top:17px}
+  .hero {padding:24px 12px 18px}
+  .details {gap:7px}
+  .detail {padding:12px 5px}
+  .detail span {font-size:11px}
+  .section {padding:17px}
+  .invite-list {gap:9px}
+  .guest {padding:12px 8px}
+  .guest strong {font-size:12px}
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="topline">
+    <span>🎮 MODO AVENTURA</span>
+    <span class="tag">SERVIDOR: CUMPLE 09</span>
+  </div>
+
+  <header class="hero">
+    <div class="eyebrow">⚡ ¡MISIÓN DESBLOQUEADA! ⚡</div>
+    <h1>LUIS SANTIAGO <span>¡CUMPLE 9!</span></h1>
+    <p class="subtitle">
+      ¡Hola, jugador! Estás invitado a una misión especial:
+      celebrar un nuevo nivel con Luis Santiago.
+    </p>
+    <div class="level">🏆 NIVEL 09 DESBLOQUEADO</div>
+
+    <div class="world" aria-label="Mundo de videojuego con tres avatares">
+      <span class="star" style="left:10%;top:20px">✦</span>
+      <span class="star" style="left:70%;top:15px">✧</span>
+      <span class="star" style="right:8%;top:60px">✦</span>
+      <span class="star" style="left:38%;top:18px">✧</span>
+      <div class="coin c1"></div><div class="coin c2"></div><div class="coin c3"></div>
+      <div class="platform p1"></div><div class="platform p2"></div>
+      <div class="platform p3"></div>
+      <div class="avatar a1">
+        <div class="head face"></div><div class="bodychar"></div>
+        <div class="legs"><i></i><i></i></div>
+      </div>
+      <div class="avatar a2">
+        <div class="head face"></div><div class="bodychar"></div>
+        <div class="legs"><i></i><i></i></div>
+      </div>
+      <div class="avatar a3">
+        <div class="head face"></div><div class="bodychar"></div>
+        <div class="legs"><i></i><i></i></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="details" aria-label="Datos de la invitación">
+    <div class="detail">
+      <div class="emoji">📅</div>
+      <strong>FECHA</strong>
+      <span>Miércoles<br>4 de noviembre</span>
+    </div>
+    <div class="detail">
+      <div class="emoji">⏰</div>
+      <strong>HORA</strong>
+      <span>7:00<br>de la noche</span>
+    </div>
+    <div class="detail">
+      <div class="emoji">📍</div>
+      <strong>LUGAR</strong>
+      <span>Restaurante<br>El Corralito</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🔊 ¡Activa el modo videojuego!</h2>
+    <p>Presiona el botón para activar efectos de sonido. ¡Sube el volumen y prepárate para jugar!</p>
+    <button class="sound-btn" id="soundButton" type="button">
+      🔊 ACTIVAR EFECTOS DE SONIDO
+    </button>
+    <div class="sound-note">Los sonidos son opcionales y se activan solo cuando presionas el botón.</div>
+  </section>
+
+  <section class="mission">
+    <h2>🚀 TU MISIÓN ESPECIAL</h2>
+    <p>
+      Ven a compartir una tarde divertida, disfrutar algo rico
+      y celebrar el cumpleaños de nuestro jugador.
+    </p>
+    <div class="progress"><div></div></div>
+    <div class="progress-label">MISIÓN PREPARADA · 100%</div>
+  </section>
+
+  <section class="section" id="invitados">
+    <h2>🧑‍🚀 ¡Elige tu avatar y confirma!</h2>
+    <p>
+      Busca tu nombre y presiona uno de los botones.
+      Se abrirá WhatsApp con tu mensaje listo para enviar.
+    </p>
+
+    <div class="invite-list" id="guestList"></div>
+  </section>
+
+  <section class="section">
+    <h2>🎉 ¡Que comience la aventura!</h2>
+    <p>
+      ¡Luis Santiago te espera para celebrar juntos su nivel 9!
+      No faltes a esta misión.
+    </p>
+    <button class="share-btn" id="shareButton" type="button">
+      📲 COMPARTIR ESTA INVITACIÓN
+    </button>
+  </section>
+
+  <div class="footer">
+    <strong>LUIS SANTIAGO · NIVEL 09</strong><br>
+    Una pequeña celebración entre amigos.<br>
+    ¡Gracias por ser parte de esta aventura! 💙
+  </div>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+"use strict";
+
+// Número que recibirá las confirmaciones por WhatsApp.
+const WHATSAPP_NUMBER = "51966410643";
+
+// Lista de invitados. Cada nombre tiene sus propios botones.
+const guests = [
+  "Juan Smith",
+  "Anny Sofía",
+  "Dylan Snaider",
+  "Matteo",
+  "Christian Leonel",
+  "Elias Sebastián",
+  "André",
+  "Anel"
+];
+
+const guestList = document.getElementById("guestList");
+const toast = document.getElementById("toast");
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.style.display = "block";
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => {
+    toast.style.display = "none";
+  }, 2800);
+}
+
+function playTone(frequency, duration, type = "square", volume = 0.045) {
+  if (!soundEnabled) return;
+  try {
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextClass) return;
+    const context = new AudioContextClass();
+    const oscillator = context.createOscillator();
+    const gain = context.createGain();
+
+    oscillator.type = type;
+    oscillator.frequency.setValueAtTime(frequency, context.currentTime);
+    gain.gain.setValueAtTime(volume, context.currentTime);
+    gain.gain.exponentialRampToValueAtTime(
+      0.001, context.currentTime + duration
+    );
+
+    oscillator.connect(gain);
+    gain.connect(context.destination);
+    oscillator.start();
+    oscillator.stop(context.currentTime + duration);
+    oscillator.onended = () => context.close();
+  } catch (error) {
+    console.warn("El navegador no pudo reproducir el sonido.", error);
+  }
+}
+
+let soundEnabled = false;
+
+function gameSound() {
+  playTone(660, 0.10);
+  setTimeout(() => playTone(880, 0.12), 100);
+}
+
+function createWhatsAppLink(name, attending) {
+  const message = attending
+    ? `¡Hola! Soy ${name}. 🎮 ¡Acepto la misión! Confirmo mi asistencia al compartir por los 9 años de Luis Santiago, el miércoles 4 de noviembre a las 7:00 p. m. en El Corralito. ¡Allí estaré! 🎉`
+    : `¡Hola! Soy ${name}. Gracias por la invitación al cumpleaños de Luis Santiago. Esta vez no podré asistir. ¡Le deseo un feliz cumpleaños! 🎂`;
+
+  return "https://wa.me/" + WHATSAPP_NUMBER +
+    "?text=" + encodeURIComponent(message);
+}
+
+function makeGuestCard(name, index) {
+  const card = document.createElement("article");
+  card.className = "guest";
+
+  const avatar = document.createElement("div");
+  avatar.className = "guest-avatar";
+  avatar.textContent = ["🧑🏻‍🚀","👩🏻‍🚀","🧑🏽‍🎮","🧑🏼‍🚀",
+                        "🧑🏾‍🎮","🧑🏻‍🎮","🧑🏼‍🚀","👩🏽‍🎮"][index];
+
+  const label = document.createElement("strong");
+  label.textContent = name;
+
+  const yes = document.createElement("button");
+  yes.className = "yes";
+  yes.type = "button";
+  yes.textContent = "✅ ¡ACEPTO LA MISIÓN!";
+  yes.addEventListener("click", () => {
+    gameSound();
+    window.open(createWhatsAppLink(name, true), "_blank", "noopener");
+  });
+
+  const no = document.createElement("button");
+  no.className = "no";
+  no.type = "button";
+  no.textContent = "✉️ NO PODRÉ ASISTIR";
+  no.addEventListener("click", () => {
+    playTone(330, 0.18, "sine");
+    window.open(createWhatsAppLink(name, false), "_blank", "noopener");
+  });
+
+  card.append(avatar, label, yes, no);
+  return card;
+}
+
+guests.forEach((name, index) => {
+  guestList.appendChild(makeGuestCard(name, index));
+});
+
+document.getElementById("soundButton").addEventListener("click", () => {
+  soundEnabled = !soundEnabled;
+  const button = document.getElementById("soundButton");
+  button.textContent = soundEnabled
+    ? "🔇 DESACTIVAR EFECTOS DE SONIDO"
+    : "🔊 ACTIVAR EFECTOS DE SONIDO";
+
+  if (soundEnabled) {
+    gameSound();
+    showToast("¡Efectos de sonido activados!");
+  } else {
+    showToast("Efectos de sonido desactivados.");
+  }
+});
+
+document.getElementById("shareButton").addEventListener("click", async () => {
+  gameSound();
+  const shareData = {
+    title: "¡Luis Santiago cumple 9!",
+    text: "¡Estás invitado a una misión especial! Acompaña a Luis Santiago en su cumpleaños número 9.",
+    url: window.location.href
+  };
+
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+    } else if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(window.location.href);
+      showToast("¡Enlace copiado! Ya puedes pegarlo en WhatsApp.");
+    } else {
+      showToast("Copia el enlace de la barra del navegador para compartirlo.");
+    }
+  } catch (error) {
+    if (error.name !== "AbortError") {
+      showToast("No se pudo compartir automáticamente. Copia el enlace.");
+    }
+  }
+});
+
+// Pequeña celebración visual al aceptar la misión.
+document.addEventListener("click", (event) => {
+  if (event.target.closest(".yes")) {
+    for (let i = 0; i < 24; i++) {
+      const piece = document.createElement("span");
+      piece.className = "confetti";
+      piece.textContent = ["★","✦","●","◆"][i % 4];
+      piece.style.left = Math.random() * 100 + "vw";
+      piece.style.color = ["#ffd447","#54eaff","#36d68b","#ff83c5"][i % 4];
+      piece.style.animationDelay = Math.random() * 0.5 + "s";
+      document.body.appendChild(piece);
+      setTimeout(() => piece.remove(), 3200);
+    }
+  }
+});
+</script>
+</body>
+</html>
